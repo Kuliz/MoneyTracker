@@ -47,7 +47,7 @@
     <div class="nav-bar">
         <button id="back-to-year" class="back-btn" onclick="showYearView()">← Back to Year</button>
         <h1 id="view-title">2026 Financial Overview</h1>
-        <div id="year-total-header">Yearly Total: <span id="grand-yearly-total" style="color: var(--accent)">ZK 0</span></div>
+        <div id="year-total-header">Yearly Total: <span id="grand-yearly-total" style="color: var(--accent)">ZMW 0</span></div>
     </div>
 
     <div id="year-view" class="year-grid"></div>
@@ -57,13 +57,13 @@
             <div class="grid" id="calendar-grid">
                 <div class="day-label">SUN</div><div class="day-label">MON</div><div class="day-label">TUE</div>
                 <div class="day-label">WED</div><div class="day-label">THU</div><div class="day-label">FRI</div>
-                <div class="day-label">SAT</div><div class="day-label">WEEKLY (ZK)</div>
+                <div class="day-label">SAT</div><div class="day-label">WEEKLY (ZMW)</div>
             </div>
         </div>
     </div>
 
     <script>
-        const currency = "ZK";
+        const currency = "ZMW";
         const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         let financialData = JSON.parse(localStorage.getItem('incomeData')) || {};
         let currentMonthName = "";
